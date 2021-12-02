@@ -23,14 +23,17 @@
           <img src="img/icons/menu_icon.svg" alt="menu icon" />
         </div>
         <!-- @Navigation -->
-        <nav>
-          <ul>
-            <li>Introduction</li>
-            <li>About</li>
-            <li>Comment</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
+        <div class="sidebar-wrapper">
+          <!-- @Down here you can switch between classes: "nav" or "sidebar" -->
+          <nav class="nav">
+            <ul>
+              <li>Introduction</li>
+              <li>About</li>
+              <li>Comment</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
       </topbar>
     </div>
 
@@ -53,8 +56,9 @@
       <div class="contact">Contact</div>
       <div class="footer">Footer</div>
     </main>
+
     <footer>$copy</footer>
-    <!-- <script src="scripts/nav-handler.js"></script>
-    <script src="scripts/fetch.js"></script> -->
+    <script src="scripts/nav-handler.js"></script>
+    <script src="scripts/fetch.js"></script>
   </body>
 </html>

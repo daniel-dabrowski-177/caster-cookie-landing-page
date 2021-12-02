@@ -35,6 +35,7 @@ main {
 }
 
 .topbar-wrapper topbar .menu {
+  margin-left: auto;
   padding-right: 10vw;
   color: #fff;
 }
@@ -44,7 +45,7 @@ main {
   cursor: pointer;
 }
 
-.topbar-wrapper nav ul {
+.topbar-wrapper .nav ul {
   font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,15 +53,39 @@ main {
   color: #fff;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 55vw;
+  width: 50vw;
+  padding-right: 10vw;
 }
 
-.topbar-wrapper nav ul li {
+.topbar-wrapper .nav ul li {
   max-width: 200px;
   list-style: none;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
+  cursor: pointer;
+}
+
+.topbar-wrapper .sidebar-wrapper .sidebar {
+  background-color: #74b9ff;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  color: #fff;
+  border-radius: 0px 0px 0px 50px;
+}
+
+.topbar-wrapper .sidebar-wrapper .sidebar ul {
+  padding-left: 0;
+}
+
+.topbar-wrapper .sidebar-wrapper .sidebar ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 50px;
+  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -72,9 +97,19 @@ main {
   }
 }
 
+@media (max-width: 425px) {
+  .topbar-wrapper .sidebar-wrapper .sidebar ul li {
+    font-size: 32px;
+    margin: 30px;
+  }
+}
+
 @media (max-width: 1024px) {
-  topbar nav {
+  topbar .nav {
     display: none;
+  }
+  topbar .sidebar {
+    display: "";
   }
 }
 
@@ -105,8 +140,8 @@ main {
 
 .introduction .cookie {
   margin-left: auto;
-  width: 25vw;
-  height: 25vw;
+  width: 15vw;
+  height: 15vw;
   margin-right: 5vw;
 }
 
@@ -122,18 +157,17 @@ main {
 
 @media (min-width: 1024px) {
   .introduction {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  .introduction p {
-    width: 50vw;
+  .introduction .mockup {
+    width: 40vw;
   }
   .introduction .cookie {
     width: 150px;
     height: 150px;
     margin-top: auto;
+    margin-right: auto;
   }
 }
 

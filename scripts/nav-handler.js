@@ -1,6 +1,7 @@
 // Menu & Navigation
 const menu = document.querySelector(".menu")
 const nav = document.querySelector(".nav")
+const siebar = document.querySelector(".siebar")
 
 // Sections
 const introduction = document.querySelector(".introduction")
@@ -15,22 +16,27 @@ const navComments = nav.children[2]
 const navContact = nav.children[3]
 
 menu.addEventListener("click", () => {
-  nav.classList.toggle("nav-open")
+  console.log("click")
+  nav.classList.remove("nav")
+  nav.classList.add("sidebar")
+  menu.style = "display: none"
 })
 
 navIntroduction.addEventListener("click", () => {
-  introduction.scrollIntoView({ behavior: "smooth" })
-  nav.classList.toggle("nav-open")
+  // introduction.scrollIntoView({ behavior: "smooth" })
+  nav.classList.remove("sidebar")
+  nav.classList.add("nav")
+  menu.style = `display: ` + "" + ``
 })
-navAbout.addEventListener("click", () => {
-  about.scrollIntoView({ behavior: "smooth" })
-  nav.classList.toggle("nav-open")
-})
-navComments.addEventListener("click", () => {
-  comments.scrollIntoView({ behavior: "smooth" })
-  nav.classList.toggle("nav-open")
-})
-navContact.addEventListener("click", () => {
-  contact.scrollIntoView({ behavior: "smooth" })
-  nav.classList.toggle("nav-open")
-})
+// navAbout.addEventListener("click", () => {
+//   about.scrollIntoView({ behavior: "smooth" })
+//   nav.classList.toggle("nav-open")
+// })
+// navComments.addEventListener("click", () => {
+//   comments.scrollIntoView({ behavior: "smooth" })
+//   nav.classList.toggle("nav-open")
+// })
+// navContact.addEventListener("click", () => {
+//   contact.scrollIntoView({ behavior: "smooth" })
+//   nav.classList.toggle("nav-open")
+// })

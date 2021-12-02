@@ -19,6 +19,7 @@
       font-size: 48px;
     }
     .menu {
+      margin-left: auto;
       padding-right: 10vw;
       color: $white;
 
@@ -28,19 +29,42 @@
       }
     }
   }
-  nav {
+  .nav {
     ul {
       font-size: 24px;
       display: flex;
       color: $white;
       justify-content: space-around;
-      width: 55vw;
+      width: 50vw;
+      padding-right: 10vw;
       li {
         max-width: 200px;
         list-style: none;
         font-family: $Roboto;
         font-weight: 700;
         font-size: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+  .sidebar-wrapper {
+    .sidebar {
+      background-color: $sky-blue;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      color: $white;
+      border-radius: 0px 0px 0px 50px;
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          font-family: $Roboto;
+          font-weight: 700;
+          font-size: 48px;
+          margin: 50px;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -59,11 +83,28 @@
     }
   }
 }
+@media ($maxL) {
+  .topbar-wrapper {
+    .sidebar-wrapper {
+      .sidebar {
+        ul {
+          li {
+            font-size: 32px;
+            margin: 30px;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media ($maxDesktop) {
   topbar {
-    nav {
+    .nav {
       display: none;
+    }
+    .sidebar {
+      display: "";
     }
   }
 }

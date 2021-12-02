@@ -13,8 +13,8 @@
   }
   .cookie {
     margin-left: auto;
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
     margin-right: 5vw;
   }
   .mockup {
@@ -32,14 +32,17 @@
 
 @media ($minDesktop) {
   .introduction {
-    flex-direction: row;
+    flex-wrap: nowrap;
     p {
-      width: 50vw;
+    }
+    .mockup {
+      width: 40vw;
     }
     .cookie {
       width: 150px;
       height: 150px;
       margin-top: auto;
+      margin-right: auto;
     }
   }
 }
