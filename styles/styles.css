@@ -1,6 +1,6 @@
 main {
   margin: auto;
-  width: 80%;
+  width: 90vw;
 }
 
 .topbar-wrapper {
@@ -11,9 +11,6 @@ main {
 }
 
 .topbar-wrapper topbar {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 50px;
   margin-bottom: 15px;
   height: 50px;
@@ -24,16 +21,67 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .topbar-wrapper topbar logo {
-  padding-left: 50px;
+  padding-left: 10vw;
   color: #fff;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
 }
 
 .topbar-wrapper topbar .menu {
-  padding-right: 50px;
+  padding-right: 10vw;
   color: #fff;
+}
+
+.topbar-wrapper topbar .menu img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.topbar-wrapper nav ul {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 55vw;
+}
+
+.topbar-wrapper nav ul li {
+  max-width: 200px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media (max-width: 375px) {
+  .topbar-wrapper topbar logo {
+    font-size: 32px;
+  }
+  .topbar-wrapper topbar img {
+    height: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  topbar nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  topbar .menu {
+    display: none;
+  }
 }
 
 .introduction {
@@ -45,13 +93,48 @@ main {
   padding-top: 125px;
 }
 
+.introduction p {
+  font-family: "Fjalla One", sans-serif;
+  color: #74b9ff;
+  font-weight: 400;
+  font-size: 72px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0;
+}
+
 .introduction .cookie {
   margin-left: auto;
   width: 25vw;
+  height: 25vw;
+  margin-right: 5vw;
 }
 
 .introduction .mockup {
-  width: 80vw;
+  width: 90vw;
+}
+
+@media (max-width: 375px) {
+  .introduction p {
+    font-size: 52px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introduction {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .introduction p {
+    width: 50vw;
+  }
+  .introduction .cookie {
+    width: 150px;
+    height: 150px;
+    margin-top: auto;
+  }
 }
 
 footer {

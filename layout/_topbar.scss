@@ -4,20 +4,74 @@
   height: 125px;
   width: 100%;
   topbar {
-    align-items: center;
     margin-top: 50px;
     margin-bottom: 15px;
     height: 50px;
     display: flex;
     background-color: $sky-blue;
     justify-content: space-between;
+    align-items: center;
     logo {
-      padding-left: 50px;
+      padding-left: 10vw;
       color: $white;
+      font-family: $Fjalla;
+      font-weight: 700;
+      font-size: 48px;
     }
     .menu {
-      padding-right: 50px;
+      padding-right: 10vw;
       color: $white;
+
+      img {
+        width: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+  nav {
+    ul {
+      font-size: 24px;
+      display: flex;
+      color: $white;
+      justify-content: space-around;
+      width: 55vw;
+      li {
+        max-width: 200px;
+        list-style: none;
+        font-family: $Roboto;
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+//@Mixin Topbar Response
+@media ($maxM) {
+  .topbar-wrapper {
+    topbar {
+      logo {
+        font-size: 32px;
+      }
+      img {
+        height: 25px;
+      }
+    }
+  }
+}
+
+@media ($maxDesktop) {
+  topbar {
+    nav {
+      display: none;
+    }
+  }
+}
+
+@media ($minDesktop) {
+  topbar {
+    .menu {
+      display: none;
     }
   }
 }

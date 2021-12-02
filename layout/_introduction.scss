@@ -3,12 +3,43 @@
   flex-wrap: wrap;
   padding-top: 125px;
   p {
+    font-family: $Fjalla;
+    color: $sky-blue;
+    font-weight: 400;
+    font-size: 72px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 0;
   }
   .cookie {
     margin-left: auto;
     width: 25vw;
+    height: 25vw;
+    margin-right: 5vw;
   }
   .mockup {
-    width: 80vw;
+    width: 90vw;
+  }
+}
+
+@media ($maxM) {
+  .introduction {
+    p {
+      font-size: 52px;
+    }
+  }
+}
+
+@media ($minDesktop) {
+  .introduction {
+    flex-direction: row;
+    p {
+      width: 50vw;
+    }
+    .cookie {
+      width: 150px;
+      height: 150px;
+      margin-top: auto;
+    }
   }
 }
