@@ -88,7 +88,7 @@ main {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .topbar-wrapper topbar logo {
     font-size: 32px;
   }
