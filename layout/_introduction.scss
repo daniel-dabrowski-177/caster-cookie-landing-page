@@ -22,7 +22,7 @@
   }
 }
 
-@media ($maxM) {
+@media ($mobileMaxM) {
   .introduction {
     p {
       font-size: 52px;
@@ -30,7 +30,7 @@
   }
 }
 
-@media ($minDesktop) {
+@media ($desktopMin) {
   .introduction {
     flex-wrap: nowrap;
     p {

@@ -71,7 +71,7 @@
 }
 
 //@Mixin Topbar Response
-@media ($maxM) {
+@media ($mobileMaxM) {
   .topbar-wrapper {
     topbar {
       logo {
@@ -83,7 +83,7 @@
     }
   }
 }
-@media ($maxL) {
+@media ($mobileMaxL) {
   .topbar-wrapper {
     .sidebar-wrapper {
       .sidebar {
@@ -98,7 +98,7 @@
   }
 }
 
-@media ($maxDesktop) {
+@media ($desktopMax) {
   topbar {
     .nav {
       display: none;
@@ -109,7 +109,7 @@
   }
 }
 
-@media ($minDesktop) {
+@media ($desktopMin) {
   topbar {
     .menu {
       display: none;
