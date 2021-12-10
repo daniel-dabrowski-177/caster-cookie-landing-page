@@ -27,7 +27,7 @@
           <!-- @Down here you can switch between classes: "nav" or "sidebar" -->
           <nav class="nav">
             <ul>
-              <li>Introduction</li>
+              <li class="active">Introduction</li>
               <li>About</li>
               <li>Comment</li>
               <li>Contact</li>
@@ -51,13 +51,116 @@
           alt="photo presenting two iphones, where one lies on the second"
         />
       </div>
-      <div class="about">About</div>
-      <div class="comment">Comment</div>
-      <div class="contact">Contact</div>
-      <div class="footer">Footer</div>
+      <div class="about-wrapper">
+        <div class="about">
+          <article>
+            <header>
+              <div class="egg">
+                <img src="img/icons/egg_icon.svg" alt="photo of fried egg" />
+              </div>
+              <h2>About us</h2>
+            </header>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              pulvinar, augue sed accumsan ullamcorper, magna odio semper urna,
+              at aliquam lectus massa eu erat. Nam pretium faucibus posuere.
+              Praesent placerat purus in tortor ultricies efficitur.
+            </p>
+          </article>
+        </div>
+        <img class="undraw1" src="img/undraw/undraw1.svg" alt="" />
+      </div>
+      <div class="comments">
+        <article>
+          <header>
+            <h2>Comments</h2>
+            <div class="nudle">
+              <img src="img/icons/nudle_icon.svg" alt="" />
+            </div>
+          </header>
+          <div class="comments-container">
+            <div class="post">
+              <img src="img/photos/photo1.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <img src="img/photos/photo2.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <img src="img/photos/photo3.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <img src="img/photos/photo4.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <img src="img/photos/photo5.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+            <div class="post">
+              <img src="img/photos/photo6.svg" alt="" />
+              <div class="desc">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At,
+                  ex odit! Repellat ipsum quibusdam pariatur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button><p>More</p></button>
+        </article>
+      </div>
+      <div class="contact">
+        <header>
+          <img
+            class="coffee"
+            src="img/icons/coffee_icon.svg"
+            alt="a picture of cafe"
+          />
+          <h2>Contact with Us!</h2>
+        </header>
+        <div class="contact-container">
+          <img class="undraw2" src="img/undraw/undraw2.svg" alt="" />
+          <div class="form-container">
+            <p>Send us and email</p>
+            <form action="">
+              <input type="text" placeholder="Enter your email adress here.." />
+              <input type="text" placeholder="Type a message here.." />
+            </form>
+            <button><p>Send</p></button>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>$copy</footer>
+    <footer>© 2021 CasterCorp, Inc. Wszelkie prawa zastrzeżone</footer>
     <script src="scripts/nav-handler.js"></script>
     <script src="scripts/fetch.js"></script>
   </body>
