@@ -425,6 +425,8 @@ button p {
   padding: 10px;
   padding-top: 0;
   color: #8d8d8d;
+  overflow: hidden;
+  font-size: 15px;
 }
 
 .comments article .card {
