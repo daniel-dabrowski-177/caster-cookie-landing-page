@@ -19,12 +19,12 @@ menu.addEventListener("click", () => {
   console.log("click")
   nav.classList.remove("nav")
   nav.classList.add("sidebar")
-  menu.style = "display: none"
+  // menu.style = "display: none"
 })
 navIntroduction.addEventListener("click", () => {
   nav.classList.remove("sidebar")
   nav.classList.add("nav")
-  menu.style = `display: ` + "" + ``
+  // menu.style = `display: ` + "" + ``
 })
 
 window.addEventListener("resize", () => {
@@ -36,7 +36,7 @@ window.addEventListener("resize", () => {
       post[4].style.display = ""
       post[5].style.display = ""
     })
-    more.style.display = "none"
+    // more.style.display = "none"
   } else {
     post.forEach((p) => {
       p.classList.remove("card")
@@ -45,7 +45,7 @@ window.addEventListener("resize", () => {
       post[4].style.display = "none"
       post[5].style.display = "none"
     })
-    more.style.display = ""
+    // more.style.display = ""
   }
 })
 

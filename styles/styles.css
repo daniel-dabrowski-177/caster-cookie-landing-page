@@ -293,7 +293,7 @@ button p {
   }
   .about-wrapper .about article header h2 {
     font-size: 52px;
-    margin-top: 10px;
+    text-align: center;
   }
 }
 
@@ -380,7 +380,7 @@ button p {
   border-left: 2px solid #222222;
 }
 
-.comments article header .nudle img {
+.comments article header img {
   margin-left: 25px;
   height: 75px;
   margin-right: 25px;
