@@ -47,16 +47,16 @@
         color: $white;
         font-family: $Fjalla;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 2rem;
         white-space: nowrap;
         @media ($desktopMin) {
-          font-size: 52px;
+          font-size: 3.25rem;
           text-align: center;
         }
         @media ($tabletMin) {
           display: flex;
           align-items: center;
-          font-size: 52px;
+          font-size: 3.25rem;
         }
       }
     }

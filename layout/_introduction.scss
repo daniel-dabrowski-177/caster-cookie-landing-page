@@ -5,14 +5,14 @@
   p {
     margin-top: 25px;
     font-family: $Fjalla;
-    color: $sky-blue;
+    color: $blue;
     font-weight: 200;
-    font-size: 72px;
+    font-size: 4.5rem;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 0;
     @media ($mobileMaxM) {
-      font-size: 52px;
+      font-size: 3.25rem;
     }
   }
   .cookie {

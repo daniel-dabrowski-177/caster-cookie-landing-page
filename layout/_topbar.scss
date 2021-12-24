@@ -15,9 +15,9 @@
       color: $white;
       font-family: $Fjalla;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 2rem;
       @media ($mobileMinL) {
-        font-size: 42px;
+        font-size: 2.5rem;
       }
     }
     .menu {
@@ -35,7 +35,7 @@
   }
   .nav {
     ul {
-      font-size: 24px;
+      font-size: 1.5rem;
       display: flex;
       color: $white;
       justify-content: space-around;
@@ -47,11 +47,11 @@
         list-style: none;
         font-family: $Roboto;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 1.5rem;
         cursor: pointer;
         position: relative;
         @media ($mobileMaxL) {
-          font-size: 32px;
+          font-size: 2rem;
           margin: 30px;
         }
       }

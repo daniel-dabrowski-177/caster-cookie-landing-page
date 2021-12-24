@@ -12,13 +12,13 @@
       align-items: center;
       font-family: $Fjalla;
       font-weight: 400;
-      font-size: 32px;
+      font-size: 2rem;
       height: 75px;
       max-width: 205px;
       @media ($tabletMin) {
         display: flex;
         align-items: center;
-        font-size: 52px;
+        font-size: 3.25rem;
         max-width: 400px;
       }
     }
@@ -67,7 +67,7 @@
         margin-bottom: 25px;
         font-family: $Fjalla;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 2rem;
       }
       form {
         display: flex;
@@ -96,7 +96,7 @@
         align-self: flex-start;
         font-family: $Roboto;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 1rem;
         color: $dark-gray;
         display: flex;
         text-align: left;
@@ -113,7 +113,7 @@
           font-family: $Roboto;
           color: $white;
           text-align: center;
-          font-size: 24px;
+          font-size: 1.5rem;
         }
       }
       @media ($tabletMax) {

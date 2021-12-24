@@ -30,12 +30,12 @@
         color: $light-black;
         font-family: $Fjalla;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 2rem;
         margin-right: 25px;
         @media ($tabletMin) {
           display: flex;
           align-items: center;
-          font-size: 52px;
+          font-size: 3.25rem;
         }
       }
       .nudle {
