@@ -15,12 +15,18 @@
       font-size: 32px;
       height: 75px;
       max-width: 205px;
+      @media ($tabletMin) {
+        display: flex;
+        align-items: center;
+        font-size: 52px;
+        max-width: 400px;
+      }
     }
     h2::before {
       top: -25px;
       left: -25px;
       content: "";
-      border-left: 2px solid $light-black;
+      border-left: 2px solid $dark-gray;
       margin-right: 25px;
       margin-left: 25px;
       height: 75px;
@@ -34,11 +40,24 @@
 
   .contact-container {
     display: flex;
-    flex-direction: row;
     margin-left: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    @media ($tabletMax) {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
     .undraw2 {
       width: 40vw;
       max-height: 350px;
+      @media ($tabletMax) {
+        display: none;
+      }
     }
     .form-container {
       display: flex;
@@ -54,6 +73,12 @@
         display: flex;
         flex-direction: column;
         margin: auto;
+        @media ($mobileMinL) {
+          input,
+          input:nth-child(2) {
+            width: 70vw;
+          }
+        }
         input {
           margin-bottom: 25px;
           height: 50px;
@@ -68,6 +93,7 @@
         }
       }
       input::placeholder {
+        align-self: flex-start;
         font-family: $Roboto;
         font-weight: 400;
         font-size: 18px;
@@ -90,45 +116,8 @@
           font-size: 24px;
         }
       }
-    }
-  }
-
-  @media ($mobileMinL) {
-    .contact {
-      form {
-        input,
-        input:nth-child(2) {
-          width: 70vw;
-        }
-      }
-    }
-  }
-}
-
-@media ($tabletMax) {
-  .contact {
-    .contact-container {
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      .form-container {
+      @media ($tabletMax) {
         margin: auto;
-      }
-    }
-    .undraw2 {
-      display: none;
-    }
-  }
-}
-
-@media ($tabletMin) {
-  .contact {
-    header {
-      h2 {
-        display: flex;
-        align-items: center;
-        font-size: 52px;
-        max-width: 400px;
       }
     }
   }

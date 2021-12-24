@@ -1,7 +1,7 @@
 fetch("https://jsonplaceholder.typicode.com/comments")
   .then((res) => res.json())
   .then((data) => {
-    const comment = document.querySelectorAll(".desc")
+    const comment = document.querySelectorAll(".comment")
 
     comment.forEach((c) => {
       let random = Math.floor(Math.random() * 500 + 1)

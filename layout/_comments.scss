@@ -1,4 +1,7 @@
 .comments {
+  @media ($tabletMin) {
+    margin-top: 25px;
+  }
   .comments-container {
     max-width: 1300px;
     margin: auto;
@@ -6,6 +9,10 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    @media ($desktopMax) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   article {
     display: flex;
@@ -25,9 +32,14 @@
         font-weight: 400;
         font-size: 32px;
         margin-right: 25px;
+        @media ($tabletMin) {
+          display: flex;
+          align-items: center;
+          font-size: 52px;
+        }
       }
       .nudle {
-        border-left: 2px solid $light-black;
+        border-left: 2px solid $dark-gray;
       }
       img {
         margin-left: 25px;
@@ -42,64 +54,70 @@
       display: flex;
       box-shadow: 0px 5.71px 5.71px rgba(0, 0, 0, 0.25);
       border-radius: 25px;
-      height: 125px;
       margin-bottom: 25px;
       cursor: pointer;
       img {
         padding: 25px;
+        margin-top: 25px;
         width: 75px;
         height: 75px;
       }
-      .desc {
+      .comment {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 125px;
-
+        margin-top: 25px;
         p {
-          border-left: 2px solid $light-black;
           height: 75px;
           padding: 10px;
           padding-top: 0;
           color: $dark-gray;
           overflow: hidden;
           font-size: 15px;
+          border-left: 2px solid $gray;
+          padding-left: 25px;
         }
       }
     }
-    .card {
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0px 4.58571px 4.58571px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
-      max-width: 300px;
-      height: 450px;
-      margin: 50px;
-      cursor: pointer;
-      img {
-        width: 200px;
-        height: 200px;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 25px;
-      }
-      .desc {
+    @media ($tabletMin) {
+      .post {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 125px;
-        padding: 25px;
-        p {
-          height: 75px;
-          padding: 10px;
-          padding-top: 0;
-          color: $dark-gray;
+        flex-direction: column;
+        box-shadow: 0px 4.58571px 4.58571px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        max-width: 300px;
+        margin: 50px;
+        cursor: pointer;
+        img {
+          width: 200px;
+          height: 200px;
+          margin-left: 25px;
         }
-        p::before {
+        .comment {
           display: flex;
-          content: "";
-          border-top: 2px solid $light-gray;
-          margin-bottom: 25px;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          padding: 25px;
+          p {
+            border: none;
+            padding: 10px;
+            margin-top: 0;
+            height: auto;
+            color: $dark-gray;
+            font-size: 1.25rem;
+            max-width: 100ch;
+          }
+          p::before {
+            display: block;
+            content: "";
+            border-top: 2px solid $gray;
+            margin-bottom: 25px;
+          }
         }
       }
     }
@@ -108,46 +126,8 @@
     justify-content: center;
     align-items: center;
     margin: auto;
-  }
-}
-
-@media ($desktopMax) {
-  .comments {
-    .comments-container {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  }
-}
-
-// @media ($desktopMin) {
-//   .comments {
-//     article {
-//       header {
-//         h2 {
-//           font-size: 52px;
-//           margin-top: 10px;
-//         }
-//       }
-//     }
-//   }
-// }
-
-@media ($tabletMin) {
-  .comments {
-    margin-top: 25px;
-    article {
-      header {
-        h2 {
-          display: flex;
-          align-items: center;
-          font-size: 52px;
-        }
-      }
-      .card {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
+    @media ($tabletMin) {
+      display: none;
     }
   }
 }

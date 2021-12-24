@@ -3,13 +3,17 @@
   flex-wrap: wrap;
   padding-top: 125px;
   p {
+    margin-top: 25px;
     font-family: $Fjalla;
     color: $sky-blue;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 72px;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 0;
+    @media ($mobileMaxM) {
+      font-size: 52px;
+    }
   }
   .cookie {
     margin-left: auto;
@@ -20,21 +24,8 @@
   .mockup {
     width: 90vw;
   }
-}
-
-@media ($mobileMaxM) {
-  .introduction {
-    p {
-      font-size: 52px;
-    }
-  }
-}
-
-@media ($desktopMin) {
-  .introduction {
+  @media ($desktopMin) {
     flex-wrap: nowrap;
-    p {
-    }
     .mockup {
       width: 40vw;
     }

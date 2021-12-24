@@ -2,21 +2,17 @@
 const menu = document.querySelector(".menu")
 const nav = document.querySelector(".nav")
 const sidebar = document.querySelector(".sidebar")
-const commentsContainer = document.querySelector(".comments-container")
 
-// Comments section -> card & post
-const card = document.querySelectorAll(".card")
+// Comments section
 const post = document.querySelectorAll(".post")
-// const more = document.querySelector(button.children[0].textContent)
 
 // Navigation
 const navIntroduction = nav.children[0]
-const navAbout = nav.children[1]
-const navComments = nav.children[2]
-const navContact = nav.children[3]
+
+//Buttons
+const more = document.querySelector(".more-btn")
 
 menu.addEventListener("click", () => {
-  console.log("click")
   nav.classList.remove("nav")
   nav.classList.add("sidebar")
   // menu.style = "display: none"
@@ -27,34 +23,28 @@ navIntroduction.addEventListener("click", () => {
   // menu.style = `display: ` + "" + ``
 })
 
-window.addEventListener("resize", () => {
-  if (window.screen.width >= 768) {
-    post.forEach((p) => {
-      p.classList.remove("post")
-      p.classList.add("card")
-      post[3].style.display = ""
-      post[4].style.display = ""
-      post[5].style.display = ""
-    })
-    // more.style.display = "none"
-  } else {
-    post.forEach((p) => {
-      p.classList.remove("card")
-      p.classList.add("post")
-      post[3].style.display = "none"
-      post[4].style.display = "none"
-      post[5].style.display = "none"
-    })
-    // more.style.display = ""
-  }
-})
+if (window.screen.width >= 768) {
+  post.forEach((p) => {
+    post[3].style.display = ""
+    post[4].style.display = ""
+    post[5].style.display = ""
+  })
+  more.style.display = "none"
+} else {
+  post.forEach((p) => {
+    post[3].style.display = "none"
+    post[4].style.display = "none"
+    post[5].style.display = "none"
+  })
+  more.style.display = ""
+}
 
-// more.addEventListener("click", () => {
-//   post[3].style.display = ""
-//   post[4].style.display = ""
-//   post[5].style.display = ""
-//   more.style.display = "none"
-// })
+more.addEventListener("click", () => {
+  post[3].style.display = ""
+  post[4].style.display = ""
+  post[5].style.display = ""
+  more.style.display = "none"
+})
 
 const ul = document.querySelector("ul")
 const li = document.querySelectorAll("li")
