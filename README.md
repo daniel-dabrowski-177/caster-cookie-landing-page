@@ -24,13 +24,16 @@ This project was to create a landing page for an application that allows us to t
 ## Project presentation:
 
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-1.PNG)
-![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-2.PNG)
-![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-3.PNG)
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-2.PNG) 
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-7.PNG)
+<!-- ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-3.PNG) -->
 <!-- ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-4.PNG) -->
 <!-- ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-5.PNG) -->
-<!-- ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-6.PNG) -->
+![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-6.PNG)
+
 
 ## Future plans:
 > Project has been complited
 
-## Links
+## Links to project
+https://caster-cookie-landing-page.netlify.app
