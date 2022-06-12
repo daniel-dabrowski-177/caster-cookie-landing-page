@@ -29,7 +29,7 @@ This project was to create a landing page for an application that allows us to t
 
 
 ## Future plans:
-> Project has been complited
+> Project is comleted
 
 ## Links to project
 https://caster-cookie-landing-page.netlify.app
