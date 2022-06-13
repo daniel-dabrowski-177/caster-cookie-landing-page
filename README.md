@@ -3,10 +3,10 @@
 This project was to create a landing page for an application that allows us to take care of calories. </br>
 
 ## Technologies used:
-> HTML & CSS </br>
-> Sass preprocesor </br>
-> JavaScript (without frameworks) </br>
-> RWD Technology
+- HTML & CSS </br>
+- Sass preprocesor </br>
+- JavaScript (without frameworks) </br>
+- RWD Technology
 
 ## The page is divided into 4 sections:
  ***Introduction:*** </br>
