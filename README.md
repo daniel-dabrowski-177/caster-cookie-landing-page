@@ -1,14 +1,14 @@
-# Cookie Landing Page Project
+# Cookie Landing Page Project 🍪🐪
 
 This project was to create a landing page for an application that allows us to take care of calories. </br>
 
-## Technologies used:
+## Technologies used: 📐
 - HTML & CSS </br>
 - Sass preprocesor </br>
 - JavaScript (without frameworks) </br>
 - RWD Technology
 
-## The page is divided into 4 sections:
+## The page is divided into 4 sections: 
  ***Introduction:*** </br>
 - Presents the appearance of the application 
 
@@ -21,7 +21,7 @@ This project was to create a landing page for an application that allows us to t
  ***Contact:*** </br>
 - A form with the possibility of contacting the company
 
-## Project presentation:
+## Project presentation: 🎭
 
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-1.PNG)
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-2.PNG)
@@ -29,7 +29,7 @@ This project was to create a landing page for an application that allows us to t
 ![](https://github.com/daniel-dabrowski-177/photos/blob/main/cookie-6.PNG)
 
 
-## Future plans:
+## Future plans: 📚
 - Project is comleted
 
 ## Links to project
