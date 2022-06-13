@@ -1,6 +1,6 @@
 # Cookie Landing Page Project 🍪🐪
 
-This project was to create a landing page for an application that allows us to take care of calories. </br>
+This project was to create a landing page for an application that can take care of your calories. 🙂 </br>
 
 ## Technologies used: 📐
 - HTML & CSS </br>
