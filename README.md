@@ -32,5 +32,5 @@ This project was to create a landing page for an application that allows us to t
 ## Future plans: 📚
 - Project is comleted
 
-## Links to project
+## Links to project 🔗
 https://caster-cookie-landing-page.netlify.app
