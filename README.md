@@ -10,16 +10,16 @@ This project was to create a landing page for an application that allows us to t
 
 ## The page is divided into 4 sections:
  ***Introduction:*** </br>
-> Presents the appearance of the application 
+- Presents the appearance of the application 
 
  ***About:*** </br>
-> Briefly about the application
+- Briefly about the application
 
  ***Comments:*** </br>
-> Display random comments using an external API
+- Display random comments using an external API
 
  ***Contact:*** </br>
-> A form with the possibility of contacting the company
+- A form with the possibility of contacting the company
 
 ## Project presentation:
 
@@ -30,7 +30,7 @@ This project was to create a landing page for an application that allows us to t
 
 
 ## Future plans:
-> Project is comleted
+- Project is comleted
 
 ## Links to project
 https://caster-cookie-landing-page.netlify.app
